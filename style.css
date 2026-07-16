@@ -60,9 +60,11 @@ nav a:hover {
     margin-bottom: 10px;
 }
 
-.hero p {
-    max-width: 700px;
-    margin: auto;
+.hero p{
+
+    font-size:22px;
+
+    max-width:650px;
 }
 
 /* =========================
