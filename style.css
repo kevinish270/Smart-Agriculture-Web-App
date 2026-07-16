@@ -48,16 +48,37 @@ nav a:hover {
    HERO SECTION
 ========================= */
 
-.hero {
-    background: linear-gradient(to right, #2e8b57, #1f4d3a);
-    color: white;
-    padding: 60px 20px;
-    text-align: center;
+.hero{
+
+    height:85vh;
+
+    background:
+    linear-gradient(rgba(0,0,0,.45),
+    rgba(0,0,0,.45)),
+    url("images/hero.jpg");
+
+    background-size:cover;
+
+    background-position:center;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:flex-start;
+
+    padding:100px;
+
+    color:white;
 }
 
-.hero h1 {
-    font-size: 36px;
-    margin-bottom: 10px;
+.hero h1{
+    font-size:65px;
+    max-width:700px;
+    line-height:1.1;
+    margin-bottom:20px;
 }
 
 .hero p{
@@ -71,11 +92,35 @@ nav a:hover {
    CONTAINER
 ========================= */
 
-.container {
-    width: 90%;
-    max-width: 1200px;
-    margin: 30px auto;
+.container{
+
+width:90%;
+
+max-width:1200px;
+
+margin:auto;
+
+padding:70px 0;
+
 }
+/* =======================
+    SECTION
+=========================*/
+.section-title {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.section-title span {
+    color: #2e8b57;
+    font-weight: bold;
+}
+
+.section-title h2 {
+    font-size: 45px;
+    margin-top: 10px;
+}
+
 
 /* =========================
    GRID SYSTEM
@@ -124,19 +169,58 @@ h2 {
    BUTTONS
 ========================= */
 
-.btn {
-    display: inline-block;
-    background: #2e8b57;
-    color: white;
-    padding: 10px 15px;
-    text-decoration: none;
-    border-radius: 5px;
-    margin-top: 10px;
-    transition: 0.3s;
+.btn{
+
+background:#2e8b57;
+
+padding:14px 28px;
+
+border-radius:8px;
+
+text-decoration:none;
+
+color:white;
+
+display:inline-block;
+
+margin-right:15px;
+
+transition:.3s;
+
+font-weight:bold;
 }
 
-.btn:hover {
-    background: #246b45;
+.btn:hover{
+
+background:#246b45;
+
+transform:translateY(-2px);
+
+}
+
+.btn-outline{
+
+padding:14px 28px;
+
+border:2px solid white;
+
+border-radius:8px;
+
+color:white;
+
+text-decoration:none;
+
+transition:.3s;
+
+
+}
+
+.btn-outline:hover{
+
+background:white;
+
+color:#2e8b57;
+
 }
 
 /* =========================
